@@ -17,6 +17,9 @@ namespace SignalR_Server.Controllers
             SignalRTestHub sth = new SignalRTestHub();
             sth.Hello();
 
+            AnotherSignalRTestHub asth = new AnotherSignalRTestHub();
+            asth.AnotherHello();
+
             return new string[] { "value1", "value2" };
         }
 
