@@ -16,6 +16,7 @@ namespace SignalR_Server.Controllers
         {
             SignalRTestHub sth = new SignalRTestHub();
             sth.Hello();
+            sth.BroadcastConnectionUsers();
 
             AnotherSignalRTestHub asth = new AnotherSignalRTestHub();
             asth.AnotherHello();
