@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SignalR_Server.Hubs;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -13,6 +14,9 @@ namespace SignalR_Server.Controllers
         // GET api/values
         public IEnumerable<string> Get()
         {
+            SignalRTestHub sth = new SignalRTestHub();
+            sth.Hello();
+
             return new string[] { "value1", "value2" };
         }
 

@@ -13,6 +13,9 @@ namespace SignalR_Server
         public void Configuration(IAppBuilder app)
         {
             ConfigureAuth(app);
+
+            //enable signalR
+            app.MapSignalR();
         }
     }
 }
